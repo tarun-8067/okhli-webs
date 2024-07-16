@@ -9,7 +9,7 @@ app.use("/",(req,res) => {
 
 
   app.use('/sendEmail', (req, res) => {
-    console.log("In send email")
+    res.sen(" in Send -email")
   })
 
   app.listen(PORT, () => {
