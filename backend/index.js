@@ -13,7 +13,7 @@ app.get("/",(req,res) => {
 
   app.get("/sendEmail",(req, res) => {
     console.log("I am in server");
-    const { fullName,fullAddress, pinCode, mobileNumber, email ,pr_id} = req.body;
+    const { fullName} = req.body;
 
     res.send(fullName);
 })
