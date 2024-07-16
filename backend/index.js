@@ -12,8 +12,11 @@ app.get("/",(req,res) => {
 
 
   app.get("/sendEmail",(req, res) => {
-    res.send("in Send -email");
-  })
+    console.log("I am in server");
+    const { fullName,fullAddress, pinCode, mobileNumber, email ,pr_id} = req.body;
+
+    res.send(fullName);
+})
 
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
