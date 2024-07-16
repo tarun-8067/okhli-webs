@@ -11,11 +11,11 @@ app.get("/",(req,res) => {
   })
 
 
-  app.post("/sendEmail",(req, res) => {
-    console.log("I am in server");
-    const { fullName} = req.body;
+  app.get("/sendEmail",(req, res) => {
+    // console.log("I am in server");
+    // const { fullName} = req.body;
 
-    res.send(fullName);
+    res.send("server is /");
 })
 
   app.listen(PORT, () => {
