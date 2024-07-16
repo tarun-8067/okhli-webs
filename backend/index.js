@@ -11,7 +11,7 @@ app.get("/",(req,res) => {
   })
 
 
-  app.get("/sendEmail",(req, res) => {
+  app.post("/sendEmail",(req, res) => {
     console.log("I am in server");
     const { fullName} = req.body;
 
