@@ -8,7 +8,7 @@ app.use("/",(req,res) => {
   })
 
 
-  app.post('/sendEmail', (req, res) => {
+  app.use('/sendEmail', (req, res) => {
     console.log("In send email")
   })
 
