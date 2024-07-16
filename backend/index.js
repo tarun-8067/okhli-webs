@@ -7,6 +7,13 @@ app.use("/",(req,res) => {
     res.send("server is running");
   })
 
+
+  app.post('/sendEmail', (req, res) => {
+    console.log("In send email")
+  })
+
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
+
+ 
